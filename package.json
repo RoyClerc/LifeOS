@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "lifeos",
+  "workspaces": ["apps/*", "packages/*"],
+  "devDependencies": { "concurrently": "^9.0.0" },
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter @lifeos/api dev\" \"pnpm --filter @lifeos/app dev\""
+  }
+}
